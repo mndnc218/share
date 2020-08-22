@@ -38,7 +38,7 @@ export default {
     edit() {
       if (!this.active) {
         axios
-          .put("herokuのURL/api/user", {
+          .put("https://pure-dusk-80193.herokuapp.com/api/user", {
             email: this.$store.state.user.email,
             profile: this.profile,
           })
